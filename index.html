@@ -2,41 +2,126 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+/* Make the image fully responsive */
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+</style>
 <title>Ensinar a Todos</title>
 </head>
 <body>
-	<header>
-		<img src="img/logo.jpg" class="col-sm-3" />
-		<div id="demo" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ul class="carousel-indicators">
-				<li data-target="#demo" data-slide-to="0" class="active"></li>
-				<li data-target="#demo" data-slide-to="1"></li>
-				<li data-target="#demo" data-slide-to="2"></li>
-			</ul>
-			<!-- The slideshow -->
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="img/somar.jpg" alt="Los Angeles">
+	<section id="content">
+		<header class="row">
+			<img src="img/logo.jpg" class="col-md-3" />
+			<div id="demo" class="carousel slide col-md-9" data-ride="carousel">
+
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/banner.jpg" alt="Banner 1">
+						<div class="carousel-caption">
+							<h3>Banner 1</h3>
+							<p>Banner example 1</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner.jpg" alt="Banner 2">
+						<div class="carousel-caption">
+							<h3>Banner 2</h3>
+							<p>Banner example 2</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner.jpg" alt="Banner 3">
+						<div class="carousel-caption">
+							<h3>Banner</h3>
+							<p>Banner example 3</p>
+						</div>
+					</div>
 				</div>
-				<div class="carousel-item">
-					<img src="img/atividades.jpg" alt="Chicago">
-				</div>
-				<div class="carousel-item">
-					<img src="img/aproximar.jpg" alt="New York">
-				</div>
+
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a> <a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
 			</div>
+		</header>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<!-- Brand -->
+			<a class="navbar-brand" href="#">Deficiência:</a>
 
-			<!-- Left and right controls -->
-			<a class="carousel-control-prev" href="#demo" data-slide="prev">
-				<span class="carousel-control-prev-icon"></span>
-			</a> <a class="carousel-control-next" href="#demo" data-slide="next">
-				<span class="carousel-control-next-icon"></span>
-			</a>
-
-		</div>
-	</header>
+			<!-- Links -->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="#">Visão</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Intelectual</a></li>
+			</ul>
+			<form class="form-inline" action="/action_page.php">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search">
+				<button class="btn btn-success" type="submit">Search</button>
+			</form>
+		</nav>
+		<section name="main-content" class="row">
+			<nav class="navbar bg-light col-md-3">
+				<!-- Links -->
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#">Matemática</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Outros</a></li>
+				</ul>
+			</nav>
+			<section id="apps-content" class="col-md-9">
+				<article id="app1" class="row mt-2">
+					<aside class="col-md-3 appImage">
+						<img src="img/somar.png" class="img-thumbnail"/>
+					</aside>
+					<p class="col-md-8">Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Vestibulum consequat mi quis pretium semper.
+						Proin luctus orci ac neque venenatis, quis commodo dolor posuere.
+						Curabitur dignissim sapien quis cursus egestas.</p>
+				</article>
+				<article id="app2" class="row mt-2">
+					<aside class="col-md-3 appImage">
+						<img src="img/somar.png" class="img-thumbnail"/>
+					</aside>
+					<p class="col-md-8">Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Vestibulum consequat mi quis pretium semper.
+						Proin luctus orci ac neque venenatis, quis commodo dolor posuere.
+						Curabitur dignissim sapien quis cursus egestas.</p>
+				</article>
+				<article id="app3" class="row mt-2">
+					<aside class="col-md-3 appImage">
+						<img src="img/somar.png" class="img-thumbnail"/>
+					</aside>
+					<p class="col-md-8">Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit. Vestibulum consequat mi quis pretium semper.
+						Proin luctus orci ac neque venenatis, quis commodo dolor posuere.
+						Curabitur dignissim sapien quis cursus egestas.</p>
+				</article>
+			</section>
+		</section>
+		<footer class="row">
+			<article class="col-md-4">
+				
+			</article>
+		</footer>
+	</section>
 </body>
 </html>
